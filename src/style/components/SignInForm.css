@@ -1,0 +1,99 @@
+@import "/src/index.css";
+
+.logo-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-line-img {
+  height: 2em;
+}
+
+.sign-in-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Inter;
+}
+
+p.sign-in-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.auth-links p {
+  text-decoration: underline;
+}
+
+.auth-links p:hover {
+  cursor: pointer;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #f5f3f3;
+}
+
+.form-section input[type="submit"] {
+  background-color: var(--priCol);
+  color: #282828;
+  font-weight: bold;
+}
+
+.form-section input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #b1c154;
+}
+
+.form-section input[type="submit"]:focus {
+  background-color: #99a74b;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.legal-links p {
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+.legal-links p:hover {
+  cursor: pointer;
+}
+
+.verticle-line {
+  width: 1px; /* Thickness of the line */
+  height: 15px; /* Height of the line */
+  background-color: black;
+}
+
+@media screen and (max-width: 560px) {
+  .form-section input {
+    border-radius: 0px;
+  }
+}
