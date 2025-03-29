@@ -4,3 +4,8 @@
 @import "/src/style/pages/SignUp.css";
 @import "/src/style/pages/SignIn.css";
 @import "/src/style/components/SignInForm.css";
+@import "/src/style/components/ExerciseHeader.css";
+@import "/src/style/pages/Exercises.css";
+@import "/src/style/components/ExerciseLibrary.css";
+@import "/src/style/components/ExerciseCard.css";
+@import "/src/style/components/ExerciseDetail.css";

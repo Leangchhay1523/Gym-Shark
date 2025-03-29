@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { CgProfile } from "react-icons/cg";
 import { IoMdMenu } from "react-icons/io";
+import GymSharkLogo from "/src/assets/gym_shark_logos/gym-shark-text-symbol-white.png";
 
 export default function NavBar() {
+  const navigate = useNavigate();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,8 +12,8 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navigateProfile = () => {
-    navigate("/profile");
+  const navigateHome = () => {
+    navigate("/home");
   };
 
   const NavBarData = [
@@ -41,12 +42,8 @@ export default function NavBar() {
   return (
     <div>
       <nav className="nav-bar">
-        <div className="profile">
-          <CgProfile className="profile-icon" onClick={navigateProfile} />
-          <div className="profile-detail">
-            <p>Welcome back Brother</p>
-            <p>John Doe!!</p>
-          </div>
+        <div onClick={navigateHome} className="profile">
+          <img src={GymSharkLogo} alt="Gym Shark Logo" />
         </div>
 
         <button onClick={toggleMenu} className="menu-toggle">
