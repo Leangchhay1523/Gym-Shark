@@ -13,32 +13,18 @@
 }
 
 .profile {
-  display: flex;
-  align-items: center;
   gap: 10px;
   width: max-content;
   flex-grow: 1;
 }
 
-.profile-icon {
-  font-size: 45px;
-  color: white;
+.profile:hover {
+  cursor: pointer;
 }
 
-.profile-detail {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  color: white;
-}
-
-.profile-detail p:first-child {
-  font-size: 16px;
-}
-
-.profile-detail p:last-child {
-  font-size: 20px;
+.profile img {
+  width: 150px;
+  height: 40px;
 }
 
 .nav-bar-content {
