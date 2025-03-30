@@ -1,30 +1,82 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import logo from "/src/assets/gym_shark_logos/gym-shark-text-symbol-white.png";
-import { FaRegEnvelope } from "react-icons/fa";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { FaEnvelope } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaTelegram } from "react-icons/fa";
 
 export default function MyFooter() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("You have subscribed.");
+  };
+
   return (
     <footer className="my-footer">
       <div className="logo-container">
-        <div className="logo-section">
+        <div className="footer-logo-section">
           <img src={logo} alt="Gymshark Logo" />
           <p className="slogan">Be a Visionary</p>
         </div>
-        <form action="" className="email-form">
+        <form action="" onSubmit={handleSubmit} className="email-form">
           <label htmlFor="email">Sign up today and push your limits.</label>
-          <div className="email-input">
-            <FaRegEnvelope className="envelope" />
-            <input type="email" name="" id="email" />
-          </div>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
           <input type="submit" value="Subscribe" />
         </form>
       </div>
-      <div className="quick-link"></div>
-      <div className="information"></div>
-      <div className="services"></div>
-      <div className="contact"></div>
+      <div className="information footer-links">
+        <p className="footer-label">Information</p>
+        <div className="footer-links-container">
+          <Link>About Us</Link>
+          <Link>More Search</Link>
+          <Link>Blog</Link>
+        </div>
+      </div>
+      <div className="quick-link footer-links">
+        <p className="footer-label">Quick Links</p>
+        <div className="footer-links-container">
+          <Link to="/home">Home</Link>
+          <Link to="/routines">Routines</Link>
+          <Link to="/exercises">Exercises</Link>
+          <Link to="/profile">Profile</Link>
+        </div>
+      </div>
+      <div className="services footer-links">
+        <p className="footer-label">Our Services</p>
+        <div className="footer-links-container">
+          <Link>Brand List</Link>
+          <Link>Order</Link>
+          <Link>Exchange</Link>
+        </div>
+      </div>
+      <div className="contact footer-links">
+        <p className="footer-label">Contact Us</p>
+        <div className="footer-links-container">
+          <div className="inner-footer-links">
+            <BiSolidPhoneCall className="footer-icons" />
+            <div className="social-text">+855 999 999 999</div>
+          </div>
+          <div className="inner-footer-links">
+            <FaEnvelope className="footer-icons" />
+            <div className="social-text">gymshark@gmail.com</div>
+          </div>
+          <div className="inner-footer-links">
+            <FaFacebook className="footer-icons" />
+            <FaSquareXTwitter className="footer-icons" />
+            <FaTelegram className="footer-icons" />
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

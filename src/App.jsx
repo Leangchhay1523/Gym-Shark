@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      {checkRender && <NavBar />}
+      {checkRender && <NavBar className="app-nav-bar" />}
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
