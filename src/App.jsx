@@ -37,11 +37,15 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
-<<<<<<< HEAD
+
+
       {/*checkRender && <MyFooter />*/} 
-=======
+
       {checkRender && <MyFooter />}
->>>>>>> b88a5d10d8a74cc3f777c2d87fa7a1032fb68c3d
+
+
+      {checkRender && <MyFooter />}
+
       {/* <MyFooter /> */}
     </>
   );
