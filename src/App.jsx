@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      {checkRender && <NavBar />}
+      {checkRender && <NavBar className="app-nav-bar" />}
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
@@ -39,8 +39,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
-      {/* {checkRender && <MyFooter />} */}
-      {/* <MyFooter /> */}
+      {checkRender && <MyFooter />}
     </>
   );
 }

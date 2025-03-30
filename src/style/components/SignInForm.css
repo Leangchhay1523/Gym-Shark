@@ -96,4 +96,8 @@ p.sign-in-text {
   .form-section input {
     border-radius: 0px;
   }
+
+  * {
+    border-radius: 0px;
+  }
 }
