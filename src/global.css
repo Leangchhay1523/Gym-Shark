@@ -2,3 +2,5 @@
 @import "/src/style/components/NavBar.css";
 @import "/src/style/components/Footer.css";
 @import "/src/style/pages/SignUp.css"
+@import "/src/style/pages/SignIn.css";
+@import "/src/style/components/SignInForm.css";

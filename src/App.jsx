@@ -27,18 +27,21 @@ function App() {
 
   return (
     <>
-      {checkRender && <NavBar />} 
-      
+      {checkRender && <NavBar />}
       <Routes>
-        {/* <Route path="/" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
         <Route path="/routines" element={<Routine />} />
         <Route path="/exercises" element={<Exercises />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
-      {checkRender && <MyFooter />} 
+<<<<<<< HEAD
+      {/*checkRender && <MyFooter />*/} 
+=======
+      {checkRender && <MyFooter />}
+>>>>>>> b88a5d10d8a74cc3f777c2d87fa7a1032fb68c3d
       {/* <MyFooter /> */}
     </>
   );

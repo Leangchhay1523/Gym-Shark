@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { IoMdMenu } from "react-icons/io";
-
+import logo from "../assets/profile/userProfile.png"
 export default function NavBar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
