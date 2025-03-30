@@ -20,7 +20,10 @@ export default function SignUp() {
             <input type="email" placeholder="Email" required />
             <input type="password" placeholder="Password" required />
             <p className="signin-link">
-              Already have an account? <Link to="/signin" style={{color:"black"}} >Sign in</Link>
+              Already have an account?{" "}
+              <Link to="/" style={{ color: "black" }}>
+                Sign in
+              </Link>
             </p>
             <button type="submit">Create Account</button>
           </form>
