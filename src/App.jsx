@@ -21,23 +21,23 @@ import SignUp from "./pages/SignUp";
 import MyFooter from "./components/Footer";
 
 function App() {
-  // const location = useLocation();
-  // const notRenderPage = ["/signup", "/"];
-  // const checkRender = notRenderPage.includes(location.pathname);
+  const location = useLocation();
+  const notRenderPage = ["/signup", "/"];
+  const checkRender = !notRenderPage.includes(location.pathname);
 
   return (
     <>
-      {/* {!checkRender && <NavBar />} */}
-      <NavBar />
+      {checkRender && <NavBar />}
       <Routes>
-        {/* <Route path="/" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
         <Route path="/routines" element={<Routine />} />
         <Route path="/exercises" element={<Exercises />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
-      {/* {!checkRender && <MyFooter />} */}
+      {/* checkRender && <MyFooter />}
       {/* <MyFooter /> */}
     </>
   );
