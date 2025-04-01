@@ -39,12 +39,11 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
-<<<<<<< HEAD
+
       {/* checkRender && <MyFooter />}
       {/* <MyFooter /> */}
-=======
-      {checkRender && <MyFooter />}
->>>>>>> 8a771e21a8bcfb06614ffe8e4b1f8def1f7be08f
+
+      {/*checkRender && <MyFooter />*/}
     </>
   );
 }
