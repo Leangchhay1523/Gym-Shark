@@ -13,13 +13,15 @@ export default function SignIn() {
 
   return (
     <div className="sign-in-page">
-      <img
-        className={`signin-banner ${width < 560 ? "no-banner" : ""}`}
-        src={SignInBanner}
-        alt="Sign In Banner"
-      />
+      <div className="sign-in-banner">
+        <img
+          className={`signin-banner ${width < 560 ? "no-banner" : ""}`}
+          src={SignInBanner}
+          alt="Sign In Banner"
+        />
+      </div>
       <div className="sign-in-form-container">
-        <SignInForm />
+        <SignInForm className="signin-form" />
       </div>
     </div>
   );

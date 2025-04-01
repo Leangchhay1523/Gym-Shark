@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../assets/gym_shark_logos/gym-shark-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SignUp() {
+  const navigate = useNavigate();
   return (
     <div className="signup-container">
       <div className="signup-wrapper">
@@ -25,7 +26,9 @@ export default function SignUp() {
                 Sign in
               </Link>
             </p>
-            <button type="submit">Create Account</button>
+            <button type="submit" onClick={() => navigate("/home")}>
+              Create Account
+            </button>
           </form>
           <div className="terms">
             <a href="#">Terms of Use</a>

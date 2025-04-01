@@ -27,7 +27,7 @@ function App() {
   const checkRender = !notRenderPage.includes(location.pathname);
 
   return (
-    <>
+    <div className="app-container">
       {checkRender && <NavBar className="app-nav-bar" />}
       <Routes>
         <Route path="/" element={<SignIn />} />
@@ -40,7 +40,7 @@ function App() {
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
       {checkRender && <MyFooter />}
-    </>
+    </div>
   );
 }
 
