@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .routine-page{
   display: grid;
   grid-template-rows: auto auto;
@@ -16,6 +17,8 @@
   justify-content: center;
 }
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 .routine-page {
   display: flex;
   height: max-content;
@@ -32,7 +35,10 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 }
 
 .images {
@@ -82,19 +88,25 @@
 }
 
 @media (max-width: 800px) {
+<<<<<<< HEAD
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;        
   }
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;
     top: -13rem;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 90%; /* Reduce the width slightly */
@@ -119,6 +131,7 @@
 }
 
 @media (max-width: 700px) {
+<<<<<<< HEAD
 
   .Scroll-image-header {
     position: relative;
@@ -126,13 +139,18 @@
     justify-content: center;
   }
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;
     top: -16.5rem;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 90%; /* Reduce the width slightly */
@@ -157,18 +175,24 @@
 }
 
 @media (max-width: 600px) {
+<<<<<<< HEAD
 
     .Scroll-image-header {
         position: relative; /* Remove absolute positioning for smaller screens */
         margin-top: 0;
     }
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative; /* Remove absolute positioning for smaller screens */
     top: -18.5rem; /* Adjust the position for smaller screens */
     margin-top: 0;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 90%; /* Make the image container take full width */
@@ -198,6 +222,7 @@
     padding: 10px; /* Add some padding for smaller screens */
   }
 
+<<<<<<< HEAD
 
   .Scroll-image-header {
     position: relative; /* Remove absolute positioning for smaller screens */
@@ -205,13 +230,18 @@
     overflow-x: hidden;
   }
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative; /* Remove absolute positioning for smaller screens */
     top: -19rem;
     height: 300px;
     overflow-x: hidden;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 100%; /* Make the image container take full width */
@@ -241,10 +271,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+<<<<<<< HEAD
   height: auto;
   gap: 8rem; /* Reduced gap for better spacing */
   background-color: #f9f9f9;
   padding: 20px;
+=======
+  height: 50px;
+  gap: 15rem;
+  background-color: yellow;
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 }
 
 /* Default button styles */

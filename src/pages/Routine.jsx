@@ -9,6 +9,7 @@ import "../style/pages/Routine.css";
 
 /*Images*/
 /*-----Build muscle images-----*/
+<<<<<<< HEAD
 
 import wheyDalgona from '../assets/routine/Build muscle/Animal Whey Protein Frozen Dalgona Coffee.jpg';
 import blueberryPancakes from '../assets/routine/Build muscle/Blueberries & Frozen Yogurt Protein Pancakes.jpg';
@@ -34,6 +35,33 @@ import shrimpRiceMealBowl from '../assets/routine/Build muscle/Shrimp & Rice Bow
 import smokedTexasBrisket from '../assets/routine/Build muscle/Smoked Texas Brisket, Cowboy Beans, and Corn.jpg';
 import spinachFetaOmelet from '../assets/routine/Build muscle/Spinach, Feta, and Sun-Dried Tomato Omelet and Potatoes.jpg';
 import spicedPumpkinBread from '../assets/routine/Build muscle/Sweet Spiced Pumpkin Bread.jpg';
+=======
+import wheyDalgona from "../assets/routine/Build muscle/Animal Whey Protein Frozen Dalgona Coffee.jpg";
+import blueberryPancakes from "../assets/routine/Build muscle/Blueberries & Frozen Yogurt Protein Pancakes.jpg";
+import braisedPork from "../assets/routine/Build muscle/Braised Pork with Soy Rice and Coleslaw.jpg";
+import muscleChickenTeriyaki from "../assets/routine/Build muscle/Chicken Teriyaki Rice and Broccoli.jpg";
+import chocoZucchini from "../assets/routine/Build muscle/Chocolate Zucchini Protein Muffins.jpg";
+import coleslawBowl from "../assets/routine/Build muscle/coleslaw bowl.jpg";
+import bananaPudding from "../assets/routine/Build muscle/Dirty Banana Pudding.jpg";
+import doubleChocolateMugCake from "../assets/routine/Build muscle/Double Chocolate Protein Mug Cake.jpg";
+import mediterraneanBowls from "../assets/routine/Build muscle/Easy Mediterranean Bowls.jpg";
+import herbRoastedChicken from "../assets/routine/Build muscle/Herb Roasted Chicken, Golden Potatoes, and Caprese.jpg";
+import proteinLasagna from "../assets/routine/Build muscle/High Protein Plant Based Lasagna.jpg";
+import proteinPancakes from "../assets/routine/Build muscle/High Protein Plant Based Pancake Muffins.jpg";
+import indianChickenCurry from "../assets/routine/Build muscle/Indian Chicken Curry.jpg";
+import jerkChicken from "../assets/routine/Build muscle/Jerk Chicken with Mashed Plantains and Greens.jpg";
+import cleanMealShake from "../assets/routine/Build muscle/Kaged Muscle Clean Meal Bulk Shake.jpg";
+import oatmealOvernight from "../assets/routine/Build muscle/Oatmeal Cookie Overnight Oats.jpg";
+import proteinShake from "../assets/routine/Build muscle/Protein Shake.jpg";
+import salmonQuinoa from "../assets/routine/Build muscle/Salmon Quinoa Bowl.jpg";
+import sausageEggWrap from "../assets/routine/Build muscle/Sausage Egg Wrap.jpg";
+import scrambledOatmealPancakes from "../assets/routine/Build muscle/Scrambled Oatmeal Pancakes.jpg";
+import shrimpRiceBowl from "../assets/routine/Build muscle/Shrimp & Rice Bowl.jpg";
+import texasBrisket from "../assets/routine/Build muscle/Smoked Texas Brisket, Cowboy Beans, and Corn.jpg";
+import texasBrisket2 from "../assets/routine/Build muscle/Smoked Texas Brisket, Cowboy Beans, and Corn(1).jpg";
+import spinachOmelet from "../assets/routine/Build muscle/Spinach, Feta, and Sun-Dried Tomato Omelet and Potatoes.jpg";
+import sweetPumpkinBread from "../assets/routine/Build muscle/Sweet Spiced Pumpkin Bread.jpg";
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
 /*-----Lose weight images-----*/
 import bananaOatmealCookies from "../assets/routine/Lose Weight/Banana and Oat Breakfast Cookies.jpg";
@@ -55,7 +83,6 @@ import tofuRiceScramble from "../assets/routine/Lose Weight/Tofu Scramble with R
 import veganProteinCookies from "../assets/routine/Lose Weight/Vegan Christmas Protein Cookies.jpg";
 
 export default function Routine() {
-
   const [activeButton, setActiveButton] = useState("build-muscle"); // Default active button
 
   const handleButtonClick = (buttonName) => {
@@ -66,8 +93,7 @@ export default function Routine() {
   const renderPage = () => {
     if (activeButton === "build-muscle") {
       return <BuildMuscle />;
-    } 
-    else if (activeButton === "lose-weight") {
+    } else if (activeButton === "lose-weight") {
       return <LoseWeight />;
     } else if (activeButton === "mymeal") {
       return <Mymeals />;
@@ -120,7 +146,9 @@ export default function Routine() {
       </div>
       <div className="Button-options">
         <button
-          className={`button ${activeButton === "build-muscle" ? "active" : ""}`}
+          className={`button ${
+            activeButton === "build-muscle" ? "active" : ""
+          }`}
           onClick={() => handleButtonClick("build-muscle")}
         >
           Build Muscle

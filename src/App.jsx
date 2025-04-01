@@ -39,14 +39,16 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
+<<<<<<< HEAD
 
 
 
       {/* checkRender && <MyFooter />}
       {/* <MyFooter /> */}
 
+=======
+>>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
       {checkRender && <MyFooter />}
-  
     </div>
   );
 }
