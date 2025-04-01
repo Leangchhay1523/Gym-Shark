@@ -1,5 +1,5 @@
 .signup-container {
-  background-color: #CBDE61;
+  background-color: #cbde61;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   border-radius: 12px;
   overflow: hidden;
   background-color: white;
-  background-image: url('/src/assets/SignUp/SignUp.jpg');
+  background-image: url("/src/assets/SignUp/SignUp.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -26,7 +26,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   background-color: rgba(255, 255, 255, 0.97);
   padding: 40px 30px;
   display: flex;
@@ -76,7 +76,7 @@ input {
 }
 
 button {
-  background-color: #CBDE61;
+  background-color: #cbde61;
   border: none;
   padding: 12px;
   border-radius: 4px;
@@ -111,7 +111,7 @@ button {
   .signup-wrapper {
     height: auto;
     padding: 30px 15px;
-    background-image: url('/src/assets/SignUp/SignUp.jpg');
+    background-image: url("/src/assets/SignUp/SignUp.jpg");
     background-size: cover;
     background-position: center;
   }

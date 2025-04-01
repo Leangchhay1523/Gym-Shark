@@ -27,7 +27,7 @@ function App() {
   const checkRender = !notRenderPage.includes(location.pathname);
 
   return (
-    <>
+    <div className="app-container">
       {checkRender && <NavBar className="app-nav-bar" />}
       <Routes>
         <Route path="/" element={<SignIn />} />
@@ -39,12 +39,17 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
+<<<<<<< HEAD
 
       {/* checkRender && <MyFooter />}
       {/* <MyFooter /> */}
 
       {/*checkRender && <MyFooter />*/}
     </>
+=======
+      {checkRender && <MyFooter />}
+    </div>
+>>>>>>> 29fe1379345f22f5d841dbfe7c168e5903774e69
   );
 }
 

@@ -4,16 +4,22 @@
   background-color: var(--priCol);
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative; /* Ensure the page container is positioned */
 }
 
+.sign-in-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
 .signin-banner {
-  width: 75%;
-  height: 85%;
   object-fit: cover;
+  height: 550px;
+  width: 80%;
   position: relative; /* Add this to make it the reference for absolute positioning */
 }
 
@@ -38,9 +44,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .sign-in-banner {
+    display: none;
+  }
   .sign-in-form-container {
+    display: block;
     position: static;
   }
 }
