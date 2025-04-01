@@ -33,7 +33,7 @@ export default function SignUp() {
             <a href="#">Privacy Policy</a>
           </div>
         </div>
-        <div className="signup-image"></div>
+        <div className="signup-image" aria-hidden="true"></div>
       </div>
     </div>
   );

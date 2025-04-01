@@ -1,0 +1,41 @@
+.exercise-library {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.embed-video {
+  width: 100%;
+}
+
+.video-container {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 50%;
+  height: 500px;
+}
+
+@media screen and (max-width: 850px) {
+  .exercise-library {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .exercise-library {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .exercise-library {
+    grid-template-columns: 1fr;
+  }
+}

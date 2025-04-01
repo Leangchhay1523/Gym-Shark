@@ -19,6 +19,7 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import MyFooter from "./components/Footer";
+import ExerciseDetail from "./components/ExerciseDetail";
 
 function App() {
   const location = useLocation();
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <>
-      {checkRender && <NavBar />}
+      {checkRender && <NavBar className="app-nav-bar" />}
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
@@ -36,9 +37,14 @@ function App() {
         <Route path="/exercises" element={<Exercises />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
+<<<<<<< HEAD
       {/* checkRender && <MyFooter />}
       {/* <MyFooter /> */}
+=======
+      {checkRender && <MyFooter />}
+>>>>>>> 8a771e21a8bcfb06614ffe8e4b1f8def1f7be08f
     </>
   );
 }

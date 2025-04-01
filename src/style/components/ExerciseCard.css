@@ -1,0 +1,35 @@
+.exercise-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.exercise-card a img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.exercise-label {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--priCol);
+  font-family: Inter;
+  text-align: center;
+}
+
+.exercise-card a {
+  text-decoration: none;
+}
+
+.exercise-card img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .exercise-label {
+    font-size: 1.3em;
+  }
+}
