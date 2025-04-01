@@ -52,6 +52,7 @@ p.sign-in-text {
   outline: none;
   border: none;
   background-color: #f5f3f3;
+  border-radius: 0px;
 }
 
 .form-section input[type="submit"] {

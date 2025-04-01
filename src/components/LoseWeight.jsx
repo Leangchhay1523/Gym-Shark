@@ -1,5 +1,5 @@
 import React from "react";
-import loseWeightMeals from "../data/loseweight";
+// import loseWeightMeals from "../data/loseweight.js";
 
 export default function LoseWeight() {
   return (
