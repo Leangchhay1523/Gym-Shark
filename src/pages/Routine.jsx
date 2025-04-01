@@ -96,6 +96,18 @@ export default function Routine() {
           ></button>
         </div>
       </div>
+      <div className="Button-options">
+        <Link to="/BuildMuscle" className="button">
+          Build Muscle
+        </Link>
+        <Link to="/LoseWeight" className="button">
+          Lose Weight
+        </Link>
+        <Link to="/MyMeals" className="button">
+          Maintain Fitness
+        </Link>
+      </div>
+      <div className="meals-list"></div>
       <div className="Button-options"></div>
       <div className="meals-list"></div>
     </div>
