@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import BuildMuscle from "../components/BuildMuscle";
+import LoseWeight from "../components/LoseWeight";
 import Footer from "../components/Footer";
 import { Link, NavLink } from 'react-router-dom';
 import '../style/pages/Routine.css';
@@ -26,7 +28,7 @@ import oatmealOvernight from '../assets/routine/Build muscle/Oatmeal Cookie Over
 import proteinShake from '../assets/routine/Build muscle/Protein Shake.jpg';
 import salmonQuinoa from '../assets/routine/Build muscle/Salmon Quinoa Bowl.jpg';
 import sausageEggWrap from '../assets/routine/Build muscle/Sausage Egg Wrap.jpg';
-import scrambledOatmealPancakes from '../assets/routine/Build muscle/Scrambled Oatmeal Pancakes.jpg';
+import scrambledOatmealPancakes from "../assets/routine/Build muscle/Scrambled Oatmeal Pancakes.jpg";
 import shrimpRiceBowl from '../assets/routine/Build muscle/Shrimp & Rice Bowl.jpg';
 import texasBrisket from '../assets/routine/Build muscle/Smoked Texas Brisket, Cowboy Beans, and Corn.jpg';
 import texasBrisket2 from '../assets/routine/Build muscle/Smoked Texas Brisket, Cowboy Beans, and Corn(1).jpg';
@@ -55,6 +57,25 @@ import veganCookies from '../assets/routine/Lose Weight/Vegan Christmas Protein 
 
 
 export default function Routine() {
+
+  const [activeButton, setActiveButton] = useState("build-muscle"); // Default active button
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName); // Set the clicked button as active
+  };
+
+  // Function to render the appropriate component
+  const renderPage = () => {
+    if (activeButton === "build-muscle") {
+      return <BuildMuscle />;
+    } 
+    else if (activeButton === "lose-weight") {
+      return <LoseWeight />;
+    } else if (activeButton === "mymeal") {
+      return <Mymeal />;
+    }
+  };
+
   return (
     <div className="routine-page">
       <div className="Scroll-image-header">
@@ -72,14 +93,27 @@ export default function Routine() {
         </div>
       </div>
       <div className="Button-options">
-        <Link to="/BuildMuscle" className="button">Build Muscle</Link>
-        <Link to="/LoseWeight" className="button">Lose Weight</Link>
-        <Link to="/MyMeals" className="button">Maintain Fitness</Link>
+        <button
+          className={`button ${activeButton === "build-muscle" ? "active" : ""}`}
+          onClick={() => handleButtonClick("build-muscle")}
+        >
+          Build Muscle
+        </button>
+        <button
+          className={`button ${activeButton === "lose-weight" ? "active" : ""}`}
+          onClick={() => handleButtonClick("lose-weight")}
+        >
+          Lose Weight
+        </button>
+        <button
+          className={`button ${activeButton === "mymeal" ? "active" : ""}`}
+          onClick={() => handleButtonClick("mymeal")}
+        >
+          My meals
+        </button>
       </div>
-      <div className="meals-list">
-
-
-      </div>
+      {/* Render the appropriate page */}
+      {renderPage()}
     </div>
   )
 }
