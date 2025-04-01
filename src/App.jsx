@@ -39,14 +39,12 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
-<<<<<<< HEAD
+
 
 
       {/* checkRender && <MyFooter />}
       {/* <MyFooter /> */}
 
-=======
->>>>>>> e689ec80a3f23d231e99fca61982e33ce5b397ef
       {checkRender && <MyFooter />}
   
     </div>

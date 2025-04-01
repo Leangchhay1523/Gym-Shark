@@ -6,7 +6,7 @@ import ExerciseLibrary from "../components/ExerciseLibrary";
 export default function Exercises() {
   return (
     <div className="exercise-page">
-<<<<<<< HEAD
+
 
 
       <h3>This is Exercises Page</h3>
@@ -15,10 +15,4 @@ export default function Exercises() {
     </div>
   )
 
-=======
-      <ExerciseHeader />
-      <ExerciseLibrary />
-    </div>
-  );
->>>>>>> e689ec80a3f23d231e99fca61982e33ce5b397ef
 }

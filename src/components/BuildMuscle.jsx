@@ -1,5 +1,5 @@
 import React from "react";
-import buildMuscleMeals from "../data/buildmuscle.js";
+import buildMuscleMeals from "../data/buildmuscle";
 import '../style/components/BuildMuscle.css';
 
 export default function BuildMuscle() {
