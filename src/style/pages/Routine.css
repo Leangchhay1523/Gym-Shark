@@ -82,49 +82,197 @@ button.nav {
   opacity: 1;
 }
 
+@media (max-width: 800px) {
+  .Scroll-image-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Scroll-image-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -13rem;
+  }
+
+  .images {
+    width: 90%; /* Reduce the width slightly */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .images img {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .images-nav {
+    bottom: 15px; /* Adjust navigation buttons position */
+    column-gap: 0.75rem; /* Reduce spacing between buttons */
+  }
+
+  .nav {
+    width: 0.45rem; /* Slightly reduce size of navigation buttons */
+    height: 0.45rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .Scroll-image-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Scroll-image-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -16.5rem;
+  }
+
+  .images {
+    width: 90%; /* Reduce the width slightly */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .images img {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .images-nav {
+    bottom: 15px; /* Adjust navigation buttons position */
+    column-gap: 0.75rem; /* Reduce spacing between buttons */
+  }
+
+  .nav {
+    width: 0.45rem; /* Slightly reduce size of navigation buttons */
+    height: 0.45rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Scroll-image-header {
+    position: relative; /* Remove absolute positioning for smaller screens */
+    margin-top: 0;
+  }
+
+  .Scroll-image-header {
+    position: relative; /* Remove absolute positioning for smaller screens */
+    top: -18.5rem; /* Adjust the position for smaller screens */
+    margin-top: 0;
+  }
+
+  .images {
+    width: 90%; /* Make the image container take full width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+
+  .images img {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .images-nav {
+    bottom: 10px; /* Adjust navigation buttons position */
+    column-gap: 0.5rem; /* Reduce spacing between buttons */
+  }
+
+  .nav {
+    width: 0.4rem; /* Reduce size of navigation buttons */
+    height: 0.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .routine-page {
+    grid-template-rows: auto auto auto;
+    padding: 10px; /* Add some padding for smaller screens */
+  }
+
+  .Scroll-image-header {
+    position: relative; /* Remove absolute positioning for smaller screens */
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .Scroll-image-header {
+    position: relative; /* Remove absolute positioning for smaller screens */
+    top: -19rem;
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .images {
+    width: 100%; /* Make the image container take full width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+
+  .images img {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .images-nav {
+    bottom: 10px; /* Adjust navigation buttons position */
+    column-gap: 0.4rem; /* Reduce spacing between buttons */
+  }
+
+  .nav {
+    width: 0.35rem; /* Further reduce size of navigation buttons */
+    height: 0.35rem;
+  }
+}
+
 /* Button container */
 .Button-options {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 8rem; /* Reduced gap for better spacing */
-  background-color: #f9f9f9;
-  padding: 20px;
+  height: auto;
+  gap: 8rem; /* Add spacing between buttons */
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px; /* Add padding for better spacing */
 }
 
 /* Default button styles */
 .button {
   height: 50px;
-  width: 200px; /* Slightly wider for better visibility */
-  background-color: white;
-  color: #cbde61; /* Green text for a fitness theme */
+  width: 160px;
+  background-color: white; /* Default background color */
+  color: #c0d25f; /* Default text color */
   text-align: center;
-  line-height: 50px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid #cbde61; /* Green border */
-  cursor: pointer;
-  transition: all 0.3s ease;
+  line-height: 50px; /* Vertically center text */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  border: 2px solid #c0d25f; /* Border color */
+  border-radius: 8px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Remove underline for links */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase; /* Make text uppercase for emphasis */
 }
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #cbde61; /* Green background on hover */
-  color: white; /* White text on hover */
-  transform: scale(1.1); /* Slightly enlarge the button */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  background-color: white; /* Light gray on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Active button styles */
 .button.active {
-  background-color: #cbde61; /* Green background for active state */
-  color: white; /* White text for active state */
-  border: none; /* Remove border for active state */
+  background-color: #c0d25f; /* Active background color */
+  color: white; /* Active text color */
+  border: none; /* Remove border for active button */
 }
 
 @media (max-width: 800px) {

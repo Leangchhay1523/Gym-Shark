@@ -3,7 +3,7 @@ import { useState } from "react";
 import BuildMuscle from "../components/BuildMuscle";
 import MyMeal from "../components/Mymeals";
 import LoseWeight from "../components/LoseWeight";
-import Footer from "../components/Footer";
+/*import Footer from "../components/Footer";*/
 import { Link, NavLink } from "react-router-dom";
 import "../style/pages/Routine.css";
 
@@ -61,6 +61,11 @@ export default function Routine() {
     setActiveButton(buttonName); // Set the clicked button as active
   };
 
+  // Handle image click to navigate to MealInfor page
+  const handleImageClick = (mealId) => {
+    navigate("/meal-info", { state: { mealId } });
+  };
+
   // Function to render the appropriate component
   const renderPage = () => {
     if (activeButton === "build-muscle") {
@@ -68,7 +73,7 @@ export default function Routine() {
     } else if (activeButton === "lose-weight") {
       return <LoseWeight />;
     } else if (activeButton === "mymeal") {
-      return <Mymeals />;
+      return <MyMeal />;
     }
   };
 
