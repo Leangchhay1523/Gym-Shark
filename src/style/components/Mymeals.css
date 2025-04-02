@@ -1,0 +1,152 @@
+/* General Page Styling */
+.meal-tracker-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+  }
+  
+  .tracker-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tracker-header h1 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .tracker-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tracker-stats div {
+    text-align: center;
+  }
+  
+  .tracker-stats p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .tracker-stats span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Add Meal Section */
+  .add-meal-section {
+    margin-bottom: 20px;
+  }
+  
+  .add-meal-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .meal-options-mymeal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .meal-option-mymeal {
+    text-align: center;
+    width: 150px;
+  }
+  
+  .meal-option-mymeal img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .meal-option-mymeal p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .meal-option-mymeal button {
+    padding: 5px 10px;
+    background-color: #cbde61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .meal-option-mymeal button:hover {
+    background-color: #b5d04f;
+  }
+  
+  /* Meal List */
+  .meal-list-mymeal {
+    margin-top: 20px;
+  }
+  
+  .meal-list-mymeal h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .meal-item-mymeal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 60px;
+    width: 70%;
+    margin: auto; /* Center the meal item */
+  }
+
+  .meal-time {
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .meal-item-mymeal img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .meal-item-mymeal p {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .meal-item-mymeal button {
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .meal-item-mymeal button:hover {
+    background-color: #ff4c4c;
+  }
+
+  .meal-time {
+    font-size: 16px;
+    color: black;
+    margin-left: 5px;
+  }

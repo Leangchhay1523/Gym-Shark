@@ -24,8 +24,8 @@
     border-bottom: 2px solid #c0d25f;
 }
 
-.meal-item h3 {
+.meal-item p {
     font-size: 16px;
-    color: #333;
+    color: #CBDE61;
     margin-top: 10px;
 }
