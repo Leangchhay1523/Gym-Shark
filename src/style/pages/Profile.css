@@ -30,6 +30,10 @@
   color: white;
 }
 
+.sidebar li:hover {
+  cursor: pointer;
+}
+
 .logout-btn {
   background: #cbde61;
   border: none;

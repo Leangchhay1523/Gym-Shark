@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../style/components/Mealinfor.css";
 
 export default function MealInfor() {
   const location = useLocation();

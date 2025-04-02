@@ -93,6 +93,19 @@ p.sign-in-text {
   background-color: black;
 }
 
+.form-section .error-state {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.201);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 560px) {
   .form-section input {
     border-radius: 0px;

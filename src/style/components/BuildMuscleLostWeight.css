@@ -1,8 +1,8 @@
 .meals-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
-  gap: 20px; /* Spacing between grid items */
+  gap: 20px;
   padding: 20px;
 }
 

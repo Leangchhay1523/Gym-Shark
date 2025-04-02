@@ -22,17 +22,13 @@
 }
 
 .exercise-video {
-  /* Positions it relative to .exercise-banner */
   position: absolute;
   font-size: 5em;
   z-index: 1;
   color: rgb(255, 255, 255);
-  top: 50%; /* Centers vertically */
-  left: 50%; /* Centers horizontally */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Adjusts for the element's own dimensions */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: Inter;
   font-weight: bold;
   width: 100%;

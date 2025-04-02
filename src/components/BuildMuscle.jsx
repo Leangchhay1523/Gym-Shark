@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import buildMuscleMeals from "../data/buildmuscle";
-import "../style/components/BuildMuscle.css";
 
 export default function BuildMuscle() {
   const navigate = useNavigate();

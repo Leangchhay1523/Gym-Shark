@@ -75,23 +75,23 @@ label {
   justify-self: flex-start;
 }
 
-.footer-links {
+.my-footer-links {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.footer-links > p {
+.my-footer-links > p {
   font-size: 1.1em;
 }
 
-.footer-links-container {
+.my-footer-links-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.footer-links-container a {
+.my-footer-links-container a {
   text-decoration: none;
   color: white;
   font-weight: 400;
@@ -103,12 +103,12 @@ label {
   font-size: 1.4em;
 }
 
-.inner-footer-links {
+.inner-my-footer-links {
   display: flex;
   gap: 10px;
 }
 
-.inner-footer-links .social-text {
+.inner-my-footer-links .social-text {
   color: black;
   text-decoration: none;
 }
@@ -156,7 +156,7 @@ label {
     font-size: 1.1em;
   }
 
-  .inner-footer-links .social-text {
+  .inner-my-footer-links .social-text {
     font-size: 0.8em;
   }
 

@@ -115,11 +115,16 @@ form {
 
 @media (max-width: 768px) {
   .signup-wrapper {
-    height: auto;
-    padding: 30px 15px;
+    height: 100%;
+    width: 100%;
     background-image: url("/src/assets/SignUp/SignUp.jpg");
     background-size: cover;
     background-position: center;
+    padding: 30px 15px;
+  }
+
+  .signup-container {
+    padding: 0px;
   }
 
   .signup-form {

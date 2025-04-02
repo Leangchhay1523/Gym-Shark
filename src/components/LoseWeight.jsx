@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import loseWeightMeals from "../data/loseweight";
-import "../style/components/LoseWeight.css";
 
 export default function LoseWeight() {
   const navigate = useNavigate();

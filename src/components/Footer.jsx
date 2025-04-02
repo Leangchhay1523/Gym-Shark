@@ -34,43 +34,43 @@ export default function MyFooter() {
           <input type="submit" value="Subscribe" />
         </form>
       </div>
-      <div className="information footer-links">
+      <div className="information my-footer-links">
         <p className="footer-label">Information</p>
-        <div className="footer-links-container">
+        <div className="my-footer-links-container">
           <Link>About Us</Link>
           <Link>More Search</Link>
           <Link>Blog</Link>
         </div>
       </div>
-      <div className="quick-link footer-links">
+      <div className="quick-link my-footer-links">
         <p className="footer-label">Quick Links</p>
-        <div className="footer-links-container">
+        <div className="my-footer-links-container">
           <Link to="/home">Home</Link>
           <Link to="/routines">Routines</Link>
           <Link to="/exercises">Exercises</Link>
           <Link to="/profile">Profile</Link>
         </div>
       </div>
-      <div className="services footer-links">
+      <div className="services my-footer-links">
         <p className="footer-label">Our Services</p>
-        <div className="footer-links-container">
+        <div className="my-footer-links-container">
           <Link>Brand List</Link>
           <Link>Order</Link>
           <Link>Exchange</Link>
         </div>
       </div>
-      <div className="contact footer-links">
+      <div className="contact my-footer-links">
         <p className="footer-label">Contact Us</p>
-        <div className="footer-links-container">
-          <div className="inner-footer-links">
+        <div className="my-footer-links-container">
+          <div className="inner-my-footer-links">
             <BiSolidPhoneCall className="footer-icons" />
             <div className="social-text">+855 999 999 999</div>
           </div>
-          <div className="inner-footer-links">
+          <div className="inner-my-footer-links">
             <FaEnvelope className="footer-icons" />
             <div className="social-text">gymshark@gmail.com</div>
           </div>
-          <div className="inner-footer-links">
+          <div className="inner-my-footer-links">
             <FaFacebook className="footer-icons" />
             <FaSquareXTwitter className="footer-icons" />
             <FaTelegram className="footer-icons" />
