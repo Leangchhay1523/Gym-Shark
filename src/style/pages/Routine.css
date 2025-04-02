@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.routine-page{
+.routine-page {
   display: grid;
   grid-template-rows: auto auto;
   overflow-x: visible;
@@ -17,8 +16,6 @@
   justify-content: center;
 }
 
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 .routine-page {
   display: flex;
   height: max-content;
@@ -35,10 +32,6 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 }
 
 .images {
@@ -68,17 +61,19 @@
   display: flex;
   column-gap: 1rem;
   position: absolute;
-  bottom: 1.25rem;
   left: 50%;
+  bottom: 20px;
   transform: translateX(-50%);
   z-index: 1;
 }
 
-.nav {
-  width: 0.5rem;
-  height: 0.5rem;
+button.nav {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #fff;
+  border: none;
+  outline: none;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
@@ -87,214 +82,28 @@
   opacity: 1;
 }
 
-@media (max-width: 800px) {
-<<<<<<< HEAD
-  .Scroll-image-header {
-    position: relative;
-    display: flex;
-    justify-content: center;        
-  }
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-  .Scroll-image-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -13rem;
-  }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-
-  .images {
-    width: 90%; /* Reduce the width slightly */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .images img {
-    flex: 0 0 auto; /* Prevent images from shrinking */
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .images-nav {
-    bottom: 15px; /* Adjust navigation buttons position */
-    column-gap: 0.75rem; /* Reduce spacing between buttons */
-  }
-
-  .nav {
-    width: 0.45rem; /* Slightly reduce size of navigation buttons */
-    height: 0.45rem;
-  }
-}
-
-@media (max-width: 700px) {
-<<<<<<< HEAD
-
-  .Scroll-image-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-  .Scroll-image-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -16.5rem;
-  }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-
-  .images {
-    width: 90%; /* Reduce the width slightly */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .images img {
-    flex: 0 0 auto; /* Prevent images from shrinking */
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .images-nav {
-    bottom: 15px; /* Adjust navigation buttons position */
-    column-gap: 0.75rem; /* Reduce spacing between buttons */
-  }
-
-  .nav {
-    width: 0.45rem; /* Slightly reduce size of navigation buttons */
-    height: 0.45rem;
-  }
-}
-
-@media (max-width: 600px) {
-<<<<<<< HEAD
-
-    .Scroll-image-header {
-        position: relative; /* Remove absolute positioning for smaller screens */
-        margin-top: 0;
-    }
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-  .Scroll-image-header {
-    position: relative; /* Remove absolute positioning for smaller screens */
-    top: -18.5rem; /* Adjust the position for smaller screens */
-    margin-top: 0;
-  }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-
-  .images {
-    width: 90%; /* Make the image container take full width */
-    height: auto; /* Adjust height to maintain aspect ratio */
-  }
-
-  .images img {
-    flex: 0 0 auto; /* Prevent images from shrinking */
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .images-nav {
-    bottom: 10px; /* Adjust navigation buttons position */
-    column-gap: 0.5rem; /* Reduce spacing between buttons */
-  }
-
-  .nav {
-    width: 0.4rem; /* Reduce size of navigation buttons */
-    height: 0.4rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .routine-page {
-    grid-template-rows: auto auto auto;
-    padding: 10px; /* Add some padding for smaller screens */
-  }
-
-<<<<<<< HEAD
-
-  .Scroll-image-header {
-    position: relative; /* Remove absolute positioning for smaller screens */
-    height: 300px;
-    overflow-x: hidden;
-  }
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-  .Scroll-image-header {
-    position: relative; /* Remove absolute positioning for smaller screens */
-    top: -19rem;
-    height: 300px;
-    overflow-x: hidden;
-  }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
-
-  .images {
-    width: 100%; /* Make the image container take full width */
-    height: auto; /* Adjust height to maintain aspect ratio */
-  }
-
-  .images img {
-    flex: 0 0 auto; /* Prevent images from shrinking */
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .images-nav {
-    bottom: 10px; /* Adjust navigation buttons position */
-    column-gap: 0.4rem; /* Reduce spacing between buttons */
-  }
-
-  .nav {
-    width: 0.35rem; /* Further reduce size of navigation buttons */
-    height: 0.35rem;
-  }
-}
-
 /* Button container */
 .Button-options {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-<<<<<<< HEAD
-  height: auto;
   gap: 8rem; /* Reduced gap for better spacing */
   background-color: #f9f9f9;
   padding: 20px;
-=======
-  height: 50px;
-  gap: 15rem;
-  background-color: yellow;
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 }
 
 /* Default button styles */
 .button {
   height: 50px;
-  width: 180px; /* Slightly wider for better visibility */
+  width: 200px; /* Slightly wider for better visibility */
   background-color: white;
-  color: #CBDE61; /* Green text for a fitness theme */
+  color: #cbde61; /* Green text for a fitness theme */
   text-align: center;
   line-height: 50px;
   font-size: 16px;
   font-weight: bold;
-  border: 2px solid #CBDE61; /* Green border */
-  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #cbde61; /* Green border */
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -305,7 +114,7 @@
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #CBDE61; /* Green background on hover */
+  background-color: #cbde61; /* Green background on hover */
   color: white; /* White text on hover */
   transform: scale(1.1); /* Slightly enlarge the button */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
@@ -313,9 +122,41 @@
 
 /* Active button styles */
 .button.active {
-  background-color: #CBDE61; /* Green background for active state */
+  background-color: #cbde61; /* Green background for active state */
   color: white; /* White text for active state */
   border: none; /* Remove border for active state */
+}
+
+@media (max-width: 800px) {
+  .Scroll-image-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Scroll-image-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images img {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media screen and (max-width: 750px) {
+  button.button {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .Button-options {
+    gap: 3rem;
+    justify-content: space-between;
+  }
 }
 
 /* Responsive adjustments for smaller screens */
@@ -329,5 +170,26 @@
     width: 100%; /* Full width for smaller screens */
     max-width: 300px; /* Limit maximum width */
   }
+
+  .images {
+    height: 400px;
+  }
 }
 
+@media (max-width: 500px) {
+  .routine-page {
+    grid-template-rows: auto auto auto;
+    padding: 10px; /* Add some padding for smaller screens */
+  }
+
+  .images {
+    width: 100%; /* Make the image container take full width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+
+  .images img {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
