@@ -41,15 +41,7 @@ function App() {
         <Route path="/meal-info" element={<MealInfor />} />
         <Route path="/exercise/:exerciseId" element={<ExerciseDetail />} />
       </Routes>
-
-
-
-
-      {/* checkRender && <MyFooter />}
-      {/* <MyFooter /> */}
-
-
-    {checkRender && <MyFooter />}
+      {checkRender && <MyFooter />}
     </div>
   );
 }
