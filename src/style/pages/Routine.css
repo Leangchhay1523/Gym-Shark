@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .routine-page{
   display: grid;
   grid-template-rows: auto auto;
@@ -17,8 +16,6 @@
   justify-content: center;
 }
 
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 .routine-page {
   display: flex;
   height: max-content;
@@ -35,10 +32,6 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 }
 
 .images {
@@ -88,25 +81,18 @@
 }
 
 @media (max-width: 800px) {
-<<<<<<< HEAD
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;        
   }
 
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;
     top: -13rem;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 90%; /* Reduce the width slightly */
@@ -131,26 +117,18 @@
 }
 
 @media (max-width: 700px) {
-<<<<<<< HEAD
-
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;
   }
 
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative;
     display: flex;
     justify-content: center;
     top: -16.5rem;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 90%; /* Reduce the width slightly */
@@ -175,24 +153,16 @@
 }
 
 @media (max-width: 600px) {
-<<<<<<< HEAD
+  .Scroll-image-header {
+    position: relative; /* Remove absolute positioning for smaller screens */
+    margin-top: 0;
+  }
 
-    .Scroll-image-header {
-        position: relative; /* Remove absolute positioning for smaller screens */
-        margin-top: 0;
-    }
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative; /* Remove absolute positioning for smaller screens */
     top: -18.5rem; /* Adjust the position for smaller screens */
     margin-top: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 90%; /* Make the image container take full width */
@@ -222,26 +192,18 @@
     padding: 10px; /* Add some padding for smaller screens */
   }
 
-<<<<<<< HEAD
-
   .Scroll-image-header {
     position: relative; /* Remove absolute positioning for smaller screens */
     height: 300px;
     overflow-x: hidden;
   }
 
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
   .Scroll-image-header {
     position: relative; /* Remove absolute positioning for smaller screens */
     top: -19rem;
     height: 300px;
     overflow-x: hidden;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
 
   .images {
     width: 100%; /* Make the image container take full width */
@@ -271,51 +233,44 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-<<<<<<< HEAD
   height: auto;
-  gap: 8rem; /* Reduced gap for better spacing */
-  background-color: #f9f9f9;
-  padding: 20px;
-=======
-  height: 50px;
-  gap: 15rem;
-  background-color: yellow;
->>>>>>> 5e91a69207d3d54ba428cb471876fd706441e2cd
+  gap: 8rem; /* Add spacing between buttons */
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px; /* Add padding for better spacing */
 }
 
 /* Default button styles */
 .button {
   height: 50px;
-  width: 180px; /* Slightly wider for better visibility */
-  background-color: white;
-  color: #CBDE61; /* Green text for a fitness theme */
+  width: 160px;
+  background-color: white; /* Default background color */
+  color: #c0d25f; /* Default text color */
   text-align: center;
-  line-height: 50px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid #CBDE61; /* Green border */
-  border-radius: 10px; /* Rounded corners */
-  cursor: pointer;
-  transition: all 0.3s ease;
+  line-height: 50px; /* Vertically center text */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  border: 2px solid #c0d25f; /* Border color */
+  border-radius: 8px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Remove underline for links */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase; /* Make text uppercase for emphasis */
 }
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #CBDE61; /* Green background on hover */
-  color: white; /* White text on hover */
-  transform: scale(1.1); /* Slightly enlarge the button */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  background-color: white; /* Light gray on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Active button styles */
 .button.active {
-  background-color: #CBDE61; /* Green background for active state */
-  color: white; /* White text for active state */
-  border: none; /* Remove border for active state */
+  background-color: #c0d25f; /* Active background color */
+  color: white; /* Active text color */
+  border: none; /* Remove border for active button */
 }
 
 /* Responsive adjustments for smaller screens */
