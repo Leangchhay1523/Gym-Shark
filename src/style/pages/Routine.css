@@ -252,7 +252,6 @@ button.nav {
   font-size: 16px; /* Adjust font size */
   font-weight: bold; /* Make text bold */
   border: 2px solid #c0d25f; /* Border color */
-  border-radius: 8px; /* Add rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   text-decoration: none; /* Remove underline for links */
